@@ -1,0 +1,88 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+*
+{
+    background-color: #fef6e4;
+    color: #0e172c;
+    font-family: "Old Standard TT";
+}
+.main
+{
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+.container
+{
+    box-sizing: border-box;
+    display: flex;
+    min-width: 602px;
+    max-width: 600px;
+    min-height: 602px;
+    max-height: 602px;
+    border: 1px solid black;
+    flex-wrap: wrap;
+    padding: 0;
+    gap: 0;
+    align-content:baseline;
+}
+
+.control
+{
+    box-sizing: border-box;
+    display: flex;
+    border: 1px solid black;
+    gap :20px;
+    max-width: 602px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+}
+.pixel
+{
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: calc(600px / 16);
+    height: calc(600px / 16);
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+#color
+{
+    align-self: center;
+}
+.clear, .eraser
+{
+    align-self: center;
+    border: 1px solid black;
+    /* color: #001858; */
+    background-color: #f582ae;
+    box-shadow: 2px 2px 0 black;
+    transition: all 0.3s;
+    width: 80px;
+    height: 30px;
+}
+.clear:active
+{
+    background-color: #f5b0cb;
+    border: 1px solid rgb(51, 50, 50);
+    box-shadow: 1px 1px 0 black;
+}
+button.isOn
+{
+    background-color: #f5b0cb;
+    border: 1px solid rgb(51, 50, 50);
+    box-shadow: 1px 1px 0 black;
+
+}
+
+input[type = number]
+{
+    align-self: center;
+    width: 100px;
+    outline: none;
+}
